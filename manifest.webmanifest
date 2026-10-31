@@ -1,13 +1,10 @@
 {
-  "name": "After Hours — Adult Games",
+  "name": "After Hours V3 — Adults 18+",
   "short_name": "After Hours",
-  "description": "Private local-only games for consenting adults 18+.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#100b13",
-  "theme_color": "#130d18",
-  "icons": [
-    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
-  ]
+  "background_color": "#100a12",
+  "theme_color": "#100a12",
+  "description": "Private, local-only solo and couples games for consenting adults 18+."
 }

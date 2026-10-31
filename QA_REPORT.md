@@ -1,30 +1,28 @@
-# After Hours V2 — QA report
+# After Hours V3 QA report
 
-## Included features
+## Static checks
+- Inline JavaScript extracted and syntax-compiled with `new Function`.
+- Manifest JSON parsed.
+- Required labels for 16 game experiences and new features verified.
+- No external font/image/API/network asset URLs are used in the page.
 
-- 4 Solo experiences: Self-Discovery, Mood & Boundaries, Private Prompt Journal, and a scripted fictional chat with Mira (24).
-- 8 Couples experiences: Yes/No/Maybe, Roulette, Truth or Dare, Desire Dialogue, compatibility quiz, Would You Rather, Hot Seat, and Connection Bingo.
-- 18+ self-declaration gate, consent-first copy, skip controls, local progress, note storage, data export and clear-data action.
-- Standalone PWA metadata and a same-origin service worker cache.
+## Implemented UI/functionality
+- Mobile-first responsive game catalogue with Solo, Couples, Studio and Progress navigation.
+- 18+ self-declaration gate.
+- Character name/personality/outfit/hair presets stored locally.
+- Fictional branching story with choice-based story chemistry and chapter progress.
+- Prompt decks, private note journal, local roulette, couples Yes/No/Maybe, Truth/Dare, quiz, Would You Rather, Connection Bingo, roleplay scenario randomizer, dice generator and browser speech playback.
+- Playful Hinglish banter/slang, local XP, completed/skipped counts, recent games, data export and clear-local-data.
+- Basic service-worker cache.
 
-## Frontend architecture
+## Not verified
+- No physical Android device or iOS Safari interaction test was run.
+- Speech synthesis availability and voice output depend on the user's browser/device.
+- Service worker and PWA installation require HTTPS hosting.
+- GitHub Pages deployment has not been run from this package.
+- Age is self-declared, not verified. The public static URL is not access-restricted; localStorage is not password-protected.
 
-- Plain HTML, CSS and JavaScript; no build dependencies for the add-on itself.
-- No Supabase, database, login, server, AI API, third-party analytics or external asset requests.
-- The couples games are pass-the-phone on one device; cross-device synchronization is not included.
-
-## Checks run
-
-- `node scripts/smoke-test.mjs` — PASS. Compiles the inline JavaScript and checks required feature labels and storage hooks.
-- Manifest JSON parse — PASS.
-- ZIP integrity/listing — PASS.
-
-## Not yet verified
-
-- Real Android/iOS browser interaction, service-worker caching and PWA installation have not been tested on physical devices.
-- The existing repository's full `npm test`, `npm run build` and GitHub Pages deployment have not been run with this add-on.
-- I could not push this add-on to GitHub: the connected GitHub integration rejected branch creation with HTTP 403. The existing repository has not been modified. Use the included Hinglish install notes and optional App link patch.
-
-## Content boundary
-
-Solo mode is a non-graphic self-discovery and reflection experience; Couples mode focuses on communication, affection, consent and shared choices. This package does not contain explicit masturbation instructions or graphic sexual scenes. The age screen is self-declared and is not verified age assurance.
+## Content limits
+- Mature Hinglish banter and cheeky slang are included.
+- Characters are fictional adults; scenes remain non-graphic.
+- No explicit genital visuals, explicit sexual acts, or masturbation instructions are included.
