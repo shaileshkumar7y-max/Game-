@@ -1,10 +1,18 @@
 {
-  "name": "After Hours V3 — Adults 18+",
+  "name": "After Hours \u2014 HER AFTER DARK Innerwear",
   "short_name": "After Hours",
+  "description": "HER AFTER DARK innerwear style studio and private solo/couples games for consenting adults 18+.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#100a12",
   "theme_color": "#100a12",
-  "description": "Private, local-only solo and couples games for consenting adults 18+."
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

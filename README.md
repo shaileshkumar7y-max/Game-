@@ -1,21 +1,22 @@
-# After Hours V3
+# After Hours — HER AFTER DARK Innerwear (V4)
 
-A static, frontend-only solo and couples game hub for consenting adults 18+. It is designed for GitHub Pages-style static hosting and uses no backend, account system, AI API, external fonts, analytics or third-party runtime requests.
+A mobile-first, frontend-only refresh of the existing After Hours V3 app. The site name stays **After Hours** and the master brand becomes **HER AFTER DARK · INNERWEAR**.
 
 ## Included
-- All 12 core experiences from V2, retained and improved.
-- New Character Studio with fictional adult character name, personality, look and outfit presets.
-- Branching Mira story with Hinglish teasing banter and a fictional chemistry meter.
-- Slow Burn chapter progression.
-- Roleplay Roulette, Three Dice Challenge and browser speech playback.
-- Playful Hinglish banter with cheeky slang, local progress, XP, private journal, JSON export and clear-data control.
-- Mobile-first interface and basic offline cache.
+- Existing 16 Solo/Couples game experiences preserved.
+- 5 new playable style games: Innerwear Style Mood, Couples Innerwear Roulette, After Dark Runway Duel, Secret Style Match, Nautanki Banter Battle.
+- HER AFTER DARK Innerwear Studio with interactive local style builder and collection concepts: Midnight Edit, MASTER SERIES Signature Edit, Power Edit, Comfort Edit.
+- Art Gallery with two user-supplied campaign-reference crops and four portrait/expression crops from the supplied figure-study sheets.
+- Local-only progress and settings, existing age gate, skip/consent choices, offline PWA cache.
 
-## Run
-Open `index.html` in a modern browser. Offline caching and PWA installation require HTTPS hosting.
+## Privacy / hosting
+No login, database, backend, AI API, third-party analytics or cloud sync. Style edits and game progress stay in the browser localStorage. The page is public if deployed to a public GitHub Pages repository; localStorage is not a privacy lock.
 
-## Important
-The age gate is self-declared, not verified age assurance. The public website URL is not access-restricted by this static app. Progress is stored in browser localStorage and is not password-protected. Anyone using the same browser profile may be able to see it. The experience is mature but non-graphic; it does not contain explicit genital depictions, graphic sexual scenes or masturbation instructions. All characters are fictional adults.
+The supplied full nude figure-study sheets are not included. Only face/expression crops are bundled. The two lingerie campaign images are cropped user-provided references and remain labelled as references; source garment marks visible in the artwork remain the source marks.
 
-## QA
-Run `node smoke-test.mjs`. The smoke test checks inline JavaScript syntax and required feature markers; it does not replace physical Android browser testing.
+## Run checks
+```bash
+node smoke-test.mjs
+```
+
+This is a static site: open `index.html` locally for a basic preview. Service worker caching requires HTTPS.

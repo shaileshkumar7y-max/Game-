@@ -1,28 +1,19 @@
-# After Hours V3 QA report
+# After Hours V4 QA Report
 
 ## Static checks
-- Inline JavaScript extracted and syntax-compiled with `new Function`.
-- Manifest JSON parsed.
-- Required labels for 16 game experiences and new features verified.
-- No external font/image/API/network asset URLs are used in the page.
+- V3 source used as the base; existing game handlers, localStorage keys, age gate and progress flows retained.
+- 5 new game cards added using existing supported gameplay handlers.
+- New Innerwear Studio and Art Gallery views added with navigation and local style builder.
+- Full nude figure sheets excluded; gallery uses face/expression crops only.
+- Two campaign images are cropped and labelled as user-provided references.
+- PWA manifest and V4 service-worker cache updated.
 
-## Implemented UI/functionality
-- Mobile-first responsive game catalogue with Solo, Couples, Studio and Progress navigation.
-- 18+ self-declaration gate.
-- Character name/personality/outfit/hair presets stored locally.
-- Fictional branching story with choice-based story chemistry and chapter progress.
-- Prompt decks, private note journal, local roulette, couples Yes/No/Maybe, Truth/Dare, quiz, Would You Rather, Connection Bingo, roleplay scenario randomizer, dice generator and browser speech playback.
-- Playful Hinglish banter/slang, local XP, completed/skipped counts, recent games, data export and clear-local-data.
-- Basic service-worker cache.
+## Test results
+- `node smoke-test.mjs`: PASS (script syntax, 21 games, new views, custom roulette deck, localStorage, manifest, bundled assets).
+- ZIP integrity/listing: PASS before delivery.
 
 ## Not verified
-- No physical Android device or iOS Safari interaction test was run.
-- Speech synthesis availability and voice output depend on the user's browser/device.
-- Service worker and PWA installation require HTTPS hosting.
-- GitHub Pages deployment has not been run from this package.
-- Age is self-declared, not verified. The public static URL is not access-restricted; localStorage is not password-protected.
-
-## Content limits
-- Mature Hinglish banter and cheeky slang are included.
-- Characters are fictional adults; scenes remain non-graphic.
-- No explicit genital visuals, explicit sexual acts, or masturbation instructions are included.
+- No physical Android device test was possible in this build environment.
+- No live GitHub deployment was performed from this update.
+- The public repository remains unchanged; upload the ZIP manually.
+- GitHub Pages policy suitability for an adult-themed site must be considered before publication.

@@ -1,30 +1,23 @@
-# After Hours V3 — Upload instructions (Hinglish)
+# After Hours V4 — phone upload guide (Hinglish)
 
-## Kya mila hai?
-- `index.html` — complete upgraded game website.
-- `manifest.webmanifest`, `icon.svg`, `sw.js` — PWA/offline support files.
-- `smoke-test.mjs` — basic syntax/feature test.
+## ZIP mein kya hai
+- `index.html` — full updated website; old V3 `index.html` ka replacement.
+- `assets/` — campaign reference crops and safe portrait/expression art crops.
+- `manifest.webmanifest`, `icon.svg`, `sw.js` — PWA and offline cache.
+- `smoke-test.mjs`, `README.md` — quick checks and notes.
 
-## Existing Game- repo mein V3 kaise lagayein
-1. ZIP extract karo.
-2. GitHub par `shaileshkumar7y-max/Game-` repo kholo.
-3. Existing `index.html` ka backup download kar lo. Existing version ko delete karne se pehle backup zaroor rakho.
-4. Root folder mein V3 ka `index.html`, `manifest.webmanifest`, `icon.svg` aur `sw.js` upload karo. Existing files ko replace karna hoga.
-5. Commit changes karo.
-6. Actions tab mein workflow green hone ka wait karo; fail ho toh deployment publish nahi hua hoga.
-7. Website par hard refresh karo. Android Chrome mein site data/cache clear karna pad sakta hai agar old service worker old version dikha raha ho.
+## Upload se pehle important hosting check
+1. Pehle existing `Game-` repository ka ZIP/backup download kar lo.
+2. Is ZIP ko phone par extract karo.
+3. GitHub Pages par upload karne se pehle adult-content policy check karo. GitHub sexually themed/suggestive material ko restrict karta hai jab uska main purpose erotic/shocking response ho; Pages bhi isi policy ke under aata hai. Yeh game hub adult-themed hai, isliye public Pages deployment ko allowed assume mat karo.
+4. Agar tum koi aisa hosting provider use karte ho jo adult-oriented content ko explicitly allow karta hai, tab `index.html`, `manifest.webmanifest`, `icon.svg`, `sw.js` aur poora `assets/` folder root par upload karo.
+5. Existing repository files ka backup rakho; baaki unrelated files delete mat karna.
+6. Deployment ke baad page refresh karo aur mobile par check karo. Android Chrome mein hard refresh ya site data/cache clear karna pad sakta hai.
 
-## Existing repo backup route
-- Backup branch ya ZIP save karna safest hai.
-- GitHub par root files replace karne se old V2 files history mein rahengi, par download ki hui local backup copy bhi rakhna.
-
-## Test checklist
-- 18+ gate confirm karo.
-- Solo tab, Couples tab aur Studio tab kholo.
-- Character settings change karke save karo.
-- Mira story ke 4 chapters/choices test karo.
-- Roulette spin, Truth/Dare, Yes/No/Maybe, Quiz, WYR, Bingo, Roleplay and Dice test karo.
-- Progress export aur clear-data test karo.
-- Android phone par portrait layout aur service-worker offline behavior test karo.
-
-Note: age gate self-declaration only hai. Public GitHub Pages URL password-restricted nahi hota; link private share karne se real access control nahi milta. Browser localStorage password-protected nahi hota. Website mature but non-graphic hai.
+## Zaroori baat
+- Existing app title **After Hours** same hai; brand **HER AFTER DARK · INNERWEAR** set kiya gaya hai.
+- Existing V3 game progress aur age-gate localStorage key preserve ki gayi hai.
+- Backend nahi hai. Two-phone live sync nahi hai.
+- Art gallery mein nude sheets ke original full images nahi hain; sirf portrait/expression crops hain.
+- GitHub Pages public hai. Private friends-only access is not provided by a self-declared age gate.
+- GitHub ki sexually obscene content policy ke context mein erotic-response-focused ya graphic materials ko Pages par host mat karna. Pages par publication ka risk tumhe review karna hoga.
