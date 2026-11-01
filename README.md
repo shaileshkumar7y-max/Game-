@@ -1,22 +1,33 @@
-# After Hours — HER AFTER DARK Innerwear (V4)
+# After Hours V5 — HER AFTER DARK / Innerwear House integration
 
-A mobile-first, frontend-only refresh of the existing After Hours V3 app. The site name stays **After Hours** and the master brand becomes **HER AFTER DARK · INNERWEAR**.
+This is an additive package for the existing `shaileshkumar7y-max/Game-` repository. It preserves the current After Hours V4 game page and adds a linked `innerwear-house/` route.
 
-## Included
-- Existing 16 Solo/Couples game experiences preserved.
-- 5 new playable style games: Innerwear Style Mood, Couples Innerwear Roulette, After Dark Runway Duel, Secret Style Match, Nautanki Banter Battle.
-- HER AFTER DARK Innerwear Studio with interactive local style builder and collection concepts: Midnight Edit, MASTER SERIES Signature Edit, Power Edit, Comfort Edit.
-- Art Gallery with two user-supplied campaign-reference crops and four portrait/expression crops from the supplied figure-study sheets.
-- Local-only progress and settings, existing age gate, skip/consent choices, offline PWA cache.
+## Integrated repository features
+- The original 21 Solo/Couples game experiences remain on the existing home page.
+- The new Innerwear House route adds the source repo's 26-product catalogue and concepts.
+- Product quick-view, sample size/colour selection, local wishlist and demo bag.
+- Four local wheels: Style, Mood, Date and Surprise.
+- Date Night Generator, Fit & Wellness guide and private measurement notes.
+- 10 campaign concepts and 12 collaboration directions.
+- Royal Sanskari, Noor Edit, Grace/heritage previews, Art Atelier and Couples Studio categories.
+- Visual library contains all 52 source-repo WebP files, plus uploaded campaign/portrait crops and covered previews for user-supplied figure-study sheets.
+- Local-only storage and offline PWA cache for the nested Innerwear House route.
 
-## Privacy / hosting
-No login, database, backend, AI API, third-party analytics or cloud sync. Style edits and game progress stay in the browser localStorage. The page is public if deployed to a public GitHub Pages repository; localStorage is not a privacy lock.
+## No backend
+There is no account, database, payment, checkout, remote voting, AI API or cloud sync. Wishlist, demo bag, date picks and wheel results stay in browser localStorage. The bag is a demo only.
 
-The supplied full nude figure-study sheets are not included. Only face/expression crops are bundled. The two lingerie campaign images are cropped user-provided references and remain labelled as references; source garment marks visible in the artwork remain the source marks.
+## Artwork handling
+All 52 WebP assets from the latest successful `New-product-` Pages artifact are included. The source `sepia-couples-moodboard.webp` and user-supplied nude figure-study sheets are shown only as covered/blurred gallery previews. The two non-nude user campaign posters and six previous cropped campaign/portrait references are also included. Unblurred figure-study source sheets are not included in the public-facing package.
 
-## Run checks
-```bash
-node smoke-test.mjs
-```
+## Install on Android / GitHub
+1. Download and extract this ZIP.
+2. Back up the current `Game-` repository before uploading.
+3. Upload/replace the included root `index.html`. Keep the existing root `assets/` folder (the V4 six local assets remain needed by the main game page).
+4. Upload the complete `innerwear-house/` folder to the repository root. Do not rename its nested `assets/` folder.
+5. Commit to `main` and wait for Pages deployment.
+6. Open the existing Game- URL. The new `Innerwear House` link appears in the top navigation and the home launch panel.
 
-This is a static site: open `index.html` locally for a basic preview. Service worker caching requires HTTPS.
+## Tests
+Run `node innerwear-house/smoke-test.mjs` from the repository root or from the folder. This checks product-data counts, code syntax, routes, image files, wheels, campaigns and local-only behaviour.
+
+Physical Android verification and live deployment are not claimed; the GitHub connector rejected branch writes with HTTP 403, so the repository was not modified by this package build.

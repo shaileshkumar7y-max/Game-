@@ -1,15 +1,19 @@
-import { readFile, stat } from 'node:fs/promises';
+import {readFile,stat,readdir} from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const html = await readFile(new URL('./index.html', import.meta.url), 'utf8');
-const script = html.match(/<script>([\s\S]*?)<\/script>/i)?.[1];
-assert.ok(script, 'inline game script exists');
-new Function(script);
-for (const feature of ['HER AFTER DARK','INNERWEAR','Innerwear Style Mood','Couples Innerwear Roulette','After Dark Runway Duel','Secret Style Match','Nautanki Banter Battle','brandView','artView','renderBrand','renderArt','data-style-build','data-style-roulette','localStorage']) assert.ok(html.includes(feature), `missing ${feature}`);
-const gamesBlock = html.slice(html.indexOf('const games=['), html.indexOf('const $=id=>'));
-assert.equal((gamesBlock.match(/\{id:/g)||[]).length,21,'21 game experiences are registered');
-for (const file of ['assets/innerwear-campaign-01.webp','assets/innerwear-campaign-02.webp','assets/art-portrait-female.webp','assets/art-portrait-male.webp','assets/art-expression-female.webp','assets/art-expression-male.webp']) { const f=await stat(new URL(file, import.meta.url)); assert.ok(f.size>1000, `${file} exists and is non-empty`); }
-const manifest=JSON.parse(await readFile(new URL('./manifest.webmanifest',import.meta.url),'utf8'));
-assert.match(manifest.name,/HER AFTER DARK/);
-const sw=await readFile(new URL('./sw.js',import.meta.url),'utf8'); assert.match(sw,/after-hours-her-after-dark-v4/);
-console.log('PASS: V4 script syntax, 21-game catalogue, brand/art views, local storage, PWA manifest and bundled assets.');
-console.log('NOTE: This smoke test does not replace real Android browser and accessibility testing.');
+import {PRODUCTS,WHEELS,CAMPAIGNS,COLLABORATIONS,DATE_IDEAS} from './data.js';
+const html=await readFile(new URL('./index.html',import.meta.url),'utf8');
+const app=await readFile(new URL('./app.js',import.meta.url),'utf8');
+assert.equal(PRODUCTS.length,26,'26 product concepts');
+assert.deepEqual(Object.keys(WHEELS),['style','mood','date','surprise']);
+for(const w of Object.values(WHEELS))assert.equal(w.items.length,8);
+assert.equal(CAMPAIGNS.length,10);assert.equal(COLLABORATIONS.length,12);assert.equal(DATE_IDEAS.length,8);
+for(const s of ['view-shop','view-wheels','view-date','view-wellness','view-campaigns','view-art','view-couples','view-wishlist','view-bag','productModal','lightbox'])assert.ok(html.includes(s),`missing ${s}`);
+for(const s of ['spin','renderArt','addBag','toggleWish','generateDate','sizeNotes','drawCouple','exportBag'])assert.ok(app.includes(s),`missing interaction ${s}`);
+assert.doesNotMatch(app,/fetch\s*\(|XMLHttpRequest|WebSocket|https?:\/\//,'no network/backend APIs in application logic');
+const assets=await readdir(new URL('./assets/',import.meta.url));
+const webps=assets.filter(x=>x.endsWith('.webp'));
+assert.ok(webps.length>=75,`all image assets bundled (${webps.length})`);
+for(const f of ['her-after-dark.webp','sepia-couples-moodboard.webp','user-art-preview-01.webp','user-campaign-poster-black.webp']){const st=await stat(new URL('./assets/'+f,import.meta.url));assert.ok(st.size>1000,f+' exists')}
+const sw=await readFile(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/after-hours-innerwear-house-v5/);
+const manifest=JSON.parse(await readFile(new URL('./manifest.webmanifest',import.meta.url),'utf8'));assert.match(manifest.name,/Innerwear House/);
+console.log(`PASS: ${PRODUCTS.length} products, 4 wheels, ${CAMPAIGNS.length} campaigns, ${COLLABORATIONS.length} collaborations, ${webps.length} WebP assets, all integrated views and local-only interactions.`);

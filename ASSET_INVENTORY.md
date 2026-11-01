@@ -1,0 +1,85 @@
+# V5 Asset Inventory
+
+The integrated Innerwear House includes the 52 WebP files from the latest successful New-product- Pages build, six previously supplied/cropped campaign and portrait references, two user-supplied campaign posters, and covered thumbnails for the remaining user-submitted figure-study sheets.
+
+## All packaged assets
+- `innerwear-house/assets/after-dark-detail.webp`
+- `innerwear-house/assets/atelier-backlit-detail.webp`
+- `innerwear-house/assets/backlit-saree-atelier-sketch.webp`
+- `innerwear-house/assets/black-elegance-fashion.webp`
+- `innerwear-house/assets/black-lace-better-together.webp`
+- `innerwear-house/assets/black-lace-collection.webp`
+- `innerwear-house/assets/black-lace-detail-v4.webp`
+- `innerwear-house/assets/blacked-luxury-campaign-detail.webp`
+- `innerwear-house/assets/blacked-luxury-campaign.webp`
+- `innerwear-house/assets/blxcked-better-together.webp`
+- `innerwear-house/assets/blxcked-boutique-detail.webp`
+- `innerwear-house/assets/blxcked-boutique-editorial.webp`
+- `innerwear-house/assets/blxcked-comfort-detail.webp`
+- `innerwear-house/assets/blxcked-everyday-comfort.webp`
+- `innerwear-house/assets/blxcked-lace-detail.webp`
+- `innerwear-house/assets/blxcked-luxury-night.webp`
+- `innerwear-house/assets/blxcked-runway-detail.webp`
+- `innerwear-house/assets/blxcked-runway.webp`
+- `innerwear-house/assets/bollywood-romance-poster-collection.webp`
+- `innerwear-house/assets/closer-together-campaign.webp`
+- `innerwear-house/assets/confidence-together-campaign.webp`
+- `innerwear-house/assets/confidence-together-detail.webp`
+- `innerwear-house/assets/elegance-after-dark-pink-campaign-detail.webp`
+- `innerwear-house/assets/elegance-after-dark-pink-campaign.webp`
+- `innerwear-house/assets/fit-guide-detail.webp`
+- `innerwear-house/assets/golden-reflection-detail.webp`
+- `innerwear-house/assets/her-after-dark-silk-morning-golden-reflection.webp`
+- `innerwear-house/assets/her-after-dark.webp`
+- `innerwear-house/assets/lace-collection-vanity.webp`
+- `innerwear-house/assets/lingerie-fit-guide.webp`
+- `innerwear-house/assets/luxury-innerwear-confidence-detail.webp`
+- `innerwear-house/assets/luxury-innerwear-confidence.webp`
+- `innerwear-house/assets/mughal-poster-detail.webp`
+- `innerwear-house/assets/mughal-royal-romance-poster.webp`
+- `innerwear-house/assets/new-lace-boutique-ad.webp`
+- `innerwear-house/assets/new-lace-boutique-detail.webp`
+- `innerwear-house/assets/partner-yoga-balance.webp`
+- `innerwear-house/assets/pink-lace-collection-ad.webp`
+- `innerwear-house/assets/pink-lace-collection.webp`
+- `innerwear-house/assets/pink-lace-detail-v4.webp`
+- `innerwear-house/assets/pink-lace-detail.webp`
+- `innerwear-house/assets/private-chemistry-after-dark-detail.webp`
+- `innerwear-house/assets/private-chemistry-after-dark.webp`
+- `innerwear-house/assets/romance-poster-detail.webp`
+- `innerwear-house/assets/royal-palace-detail.webp`
+- `innerwear-house/assets/royal-palace-saree.webp`
+- `innerwear-house/assets/sepia-couples-moodboard.webp`
+- `innerwear-house/assets/show-poster-black-edition.webp`
+- `innerwear-house/assets/show-poster-sydney-edition.webp`
+- `innerwear-house/assets/silk-morning-detail.webp`
+- `innerwear-house/assets/stretch-closer-together-detail.webp`
+- `innerwear-house/assets/stretch-closer-together.webp`
+- `innerwear-house/assets/uploaded-art-expression-female.webp`
+- `innerwear-house/assets/uploaded-art-expression-male.webp`
+- `innerwear-house/assets/uploaded-art-portrait-female.webp`
+- `innerwear-house/assets/uploaded-art-portrait-male.webp`
+- `innerwear-house/assets/uploaded-campaign-crop-01.webp`
+- `innerwear-house/assets/uploaded-campaign-crop-02.webp`
+- `innerwear-house/assets/user-art-preview-01.webp`
+- `innerwear-house/assets/user-art-preview-02.webp`
+- `innerwear-house/assets/user-art-preview-03.webp`
+- `innerwear-house/assets/user-art-preview-04.webp`
+- `innerwear-house/assets/user-art-preview-05.webp`
+- `innerwear-house/assets/user-art-preview-06.webp`
+- `innerwear-house/assets/user-art-preview-07.webp`
+- `innerwear-house/assets/user-art-preview-08.webp`
+- `innerwear-house/assets/user-art-preview-09.webp`
+- `innerwear-house/assets/user-art-preview-10.webp`
+- `innerwear-house/assets/user-art-preview-11.webp`
+- `innerwear-house/assets/user-art-preview-12.webp`
+- `innerwear-house/assets/user-art-preview-13.webp`
+- `innerwear-house/assets/user-art-preview-14.webp`
+- `innerwear-house/assets/user-art-preview-15.webp`
+- `innerwear-house/assets/user-art-preview-16.webp`
+- `innerwear-house/assets/user-art-preview-17.webp`
+- `innerwear-house/assets/user-art-preview-18.webp`
+- `innerwear-house/assets/user-campaign-poster-black.webp`
+- `innerwear-house/assets/user-campaign-poster-sydney.webp`
+
+The full nude figure-study originals are not copied. User-supplied figure sheets are represented by blurred/covered preview thumbnails. `sepia-couples-moodboard.webp` from the source repo is also displayed as a covered preview.

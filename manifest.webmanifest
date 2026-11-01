@@ -1,12 +1,12 @@
 {
-  "name": "After Hours \u2014 HER AFTER DARK Innerwear",
-  "short_name": "After Hours",
-  "description": "HER AFTER DARK innerwear style studio and private solo/couples games for consenting adults 18+.",
-  "start_url": "./",
+  "name": "After Hours \u2014 Innerwear House",
+  "short_name": "Innerwear House",
+  "description": "Local innerwear catalogue, wheels, date ideas, wellness guide and visual library.",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#100a12",
-  "theme_color": "#100a12",
+  "background_color": "#0d0910",
+  "theme_color": "#0d0910",
   "icons": [
     {
       "src": "./icon.svg",

@@ -1,23 +1,27 @@
-# After Hours V4 — phone upload guide (Hinglish)
+# V5 ZIP upload guide (Hinglish)
 
-## ZIP mein kya hai
-- `index.html` — full updated website; old V3 `index.html` ka replacement.
-- `assets/` — campaign reference crops and safe portrait/expression art crops.
-- `manifest.webmanifest`, `icon.svg`, `sw.js` — PWA and offline cache.
-- `smoke-test.mjs`, `README.md` — quick checks and notes.
+**Is ZIP ko ek folder samajhkar upload mat karna.** ZIP extract karke andar ke files ko repo ke root par upload karna hai.
 
-## Upload se pehle important hosting check
-1. Pehle existing `Game-` repository ka ZIP/backup download kar lo.
-2. Is ZIP ko phone par extract karo.
-3. GitHub Pages par upload karne se pehle adult-content policy check karo. GitHub sexually themed/suggestive material ko restrict karta hai jab uska main purpose erotic/shocking response ho; Pages bhi isi policy ke under aata hai. Yeh game hub adult-themed hai, isliye public Pages deployment ko allowed assume mat karo.
-4. Agar tum koi aisa hosting provider use karte ho jo adult-oriented content ko explicitly allow karta hai, tab `index.html`, `manifest.webmanifest`, `icon.svg`, `sw.js` aur poora `assets/` folder root par upload karo.
-5. Existing repository files ka backup rakho; baaki unrelated files delete mat karna.
-6. Deployment ke baad page refresh karo aur mobile par check karo. Android Chrome mein hard refresh ya site data/cache clear karna pad sakta hai.
+1. GitHub `Game-` repo ka backup/download ZIP pehle le lo.
+2. V5 ZIP extract karo.
+3. Root ka updated `index.html` existing Game- root mein replace karo.
+4. `innerwear-house` poora folder repo root par upload karo — uske andar `index.html`, `styles.css`, `app.js`, `data.js`, `sw.js`, `manifest.webmanifest`, feedback files aur `assets/` folder hain.
+5. Existing root `assets/` folder delete mat karna; original After Hours game ke current images wahan hain.
+6. GitHub par commit karo. Pages deploy hone ke baad purani site refresh/hard refresh karo.
+7. Top navigation ya home ke `Open Innerwear House` card se naya section khulega.
 
-## Zaroori baat
-- Existing app title **After Hours** same hai; brand **HER AFTER DARK · INNERWEAR** set kiya gaya hai.
-- Existing V3 game progress aur age-gate localStorage key preserve ki gayi hai.
-- Backend nahi hai. Two-phone live sync nahi hai.
-- Art gallery mein nude sheets ke original full images nahi hain; sirf portrait/expression crops hain.
-- GitHub Pages public hai. Private friends-only access is not provided by a self-declared age gate.
-- GitHub ki sexually obscene content policy ke context mein erotic-response-focused ya graphic materials ko Pages par host mat karna. Pages par publication ka risk tumhe review karna hoga.
+## Kya add hua
+- 26 catalogue product concepts, quick-view and sample size/colour picker.
+- Wishlist and demo bag (local only, no checkout).
+- 4 working wheels: Style, Mood, Date, Surprise.
+- Date Night generator, fit guide and wellness checklist.
+- 10 campaign ideas, 12 collab concepts, Royal Sanskari, Noor Edit, Couples Studio and Art Atelier.
+- 52 New-product WebP assets plus uploaded campaign/portrait crops and covered art previews.
+- Main After Hours games untouched.
+
+## Important
+- Backend / login / payments / online sync nahi hai.
+- Demo bag order place nahi karta.
+- Private page public GitHub Pages par sabko visible ho sakta hai. 18+ self-check proper password protection nahi hai.
+- Figure-study images covered previews mein hain; unblurred nude originals package mein nahi hain.
+- Live deployment abhi nahi hua; upload ke baad Actions/Pages success verify karna.
