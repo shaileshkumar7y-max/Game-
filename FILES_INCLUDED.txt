@@ -1,0 +1,16 @@
+V7 ZIP files:
+- index.html (new main After Hours game hub)
+- games-v7.css (new mobile-first game UI)
+- games-v7.js (new game engines and image shuffle)
+- manifest.webmanifest (V7 main app manifest)
+- sw.js (V7 offline cache and image-failure handling)
+- innerwear-house/index.html (relocated Innerwear House route using existing root app files)
+- innerwear-house/manifest.webmanifest
+- smoke-test-v7.mjs
+- README_V7.md
+- INSTALL_HINGLISH.md
+- QA_REPORT_V7.md
+
+Not included intentionally (already in Game- repo; do not duplicate):
+- app.js, data.js, styles.css, icon.svg, private-feedback.html, feedback.css, feedback.js
+- All existing 84 root-level WebP image assets

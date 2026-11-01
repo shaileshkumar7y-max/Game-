@@ -1,29 +1,36 @@
-# V6 Fix — Android / GitHub Upload Guide (Hinglish)
+# AFTER HOURS V7 — Upload Guide (Android / Hinglish)
 
-**Is ZIP mein images intentionally nahi hain**, kyunki saari 84 WebP images tumhare `Game-` repo ke root mein pehle se maujood hain. ZIP mein duplicate photos nahi rakhe.
+**ZIP ke andar root files seedhe rakhe gaye hain; extra wrapper folder nahi hai.** Existing images aur Innerwear source files dobara upload nahi karne.
 
-## GitHub par upload
+## Upload steps
 
-1. `Game-` repository ka current backup ZIP save kar lo.
-2. Is V6 ZIP ko extract karo.
-3. ZIP ka root `index.html` repository ke existing root `index.html` ko replace karega. Isse After Hours ka 21-game Solo/Couples hub main page par wapas aayega.
-4. Root `sw.js` aur `manifest.webmanifest` bhi replace karo.
-5. `innerwear-house/` ka poora folder repository root par upload karo. Iske andar `index.html`, `app.js`, `data.js`, `styles.css`, `manifest.webmanifest`, feedback files aur test files hain.
-6. Repository ke root mein jo `.webp` images hain unhe **delete, move ya re-upload mat karna**. `assets/` naam ka naya folder banane ki zaroorat nahi hai.
-7. Commit changes. GitHub Actions / Pages deployment successful hone ke baad site kholo.
+1. GitHub `shaileshkumar7y-max/Game-` repository ka backup ZIP download kar lo.
+2. `After_Hours_V7_Complete_One_Phase.zip` phone par extract karo.
+3. Extracted files mein root `index.html`, `manifest.webmanifest` aur `sw.js` ko repository ke root mein replace karo.
+4. `games-v7.css` aur `games-v7.js` ko repository root mein naye files ke roop mein upload karo.
+5. `innerwear-house` folder ko poora repository root mein upload karo. Iske andar `index.html` aur `manifest.webmanifest` dono hone chahiye.
+6. **In existing files ko replace/delete mat karna:** `app.js`, `data.js`, `styles.css`, `icon.svg`, `private-feedback.html`, `feedback.css`, `feedback.js`.
+7. Root par pehle se maujood **saari 84 `.webp` images ko waise hi rehne do**. ZIP mein unki copies nahi hain.
+8. Commit to `main`; GitHub Actions / Pages deployment green hone do.
+9. Chrome mein website reload karo. Purana screen aaye to site cache clear karke dobara kholo.
 
-## Open kaise karna hai
+## Live routes after upload
 
-- After Hours Solo/Couples games: `https://shaileshkumar7y-max.github.io/Game-/`
+- Main After Hours game hub: `https://shaileshkumar7y-max.github.io/Game-/`
 - HER AFTER DARK Innerwear House: `https://shaileshkumar7y-max.github.io/Game-/innerwear-house/`
 
-## Upload ke baad cache refresh
+## What is in V7
 
-Agar purana cached version dikhe, Chrome mein site ko reload karo. Zaroorat pade to site settings mein is site ka stored data/cache clear karke dobara kholo; V6 service worker ka cache name badla gaya hai.
+- 26 Solo / Couples / Party game modes with refreshed prompt decks.
+- Hinglish banter levels: Friendly, Naughty, Roast and Full Roast.
+- CHUT MODE, LAND MODE and Couples Shuffle with no-repeat gallery cycles, previous / next and favourites.
+- Scripted Solo Girl Story and Mira Chat, private matching, Spin the Bottle, quiz, dice and reaction games.
+- Improved local scoring guard, malformed-save protection, pass / stop controls and reduced-motion option.
+- Existing Innerwear House kept as its own route: product catalogue, wishlist, demo bag, wheels, date generator, fit guide, campaigns and Art Atelier.
 
 ## Important
 
-- ZIP sirf code + docs hai; 0 WebP image files included hain.
-- Root images already exist honi chahiye. `ASSET_INVENTORY.md` ki list se missing filename check kar sakte ho.
-- Age gate self-declaration hai; public GitHub Pages URL ko private/password protected nahi banata.
-- Android physical device par final tap-testing upload ke baad karni hogi.
+- Backend, login, payments, AI API or online multiplayer nahi hai. Scores and favourites same browser ke localStorage mein save hote hain.
+- 18+ gate self-confirmation hai, password protection nahi. Public GitHub Pages link public hi rahega.
+- Chut/Land shuffle curated lingerie campaign images, portrait crops and covered artwork use karta hai; explicit genital imagery / unblurred nude sheets included nahi hain.
+- Existing image and source files ko delete mat karna.

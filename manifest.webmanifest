@@ -1,18 +1,11 @@
 {
-  "name": "After Hours \u2014 HER AFTER DARK Innerwear House",
+  "name": "After Hours — HER AFTER DARK Innerwear House",
   "short_name": "Innerwear House",
-  "description": "Local-only product catalogue, four wheels, date ideas, fit guide and art atelier.",
+  "description": "Local innerwear catalogue, campaign wheels, date ideas, size guide and Art Atelier.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#100a12",
-  "theme_color": "#100a12",
-  "icons": [
-    {
-      "src": "../icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
+  "background_color": "#0d0910",
+  "theme_color": "#0d0910",
+  "icons": [{ "src": "../icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
 }
