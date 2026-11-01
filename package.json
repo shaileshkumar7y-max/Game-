@@ -1,10 +1,10 @@
 {
   "name": "after-hours-innerwear-house",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node --check app.js",
+    "check": "node --check app.js && node --check feedback.js",
     "test": "node smoke-test.mjs"
   }
 }
