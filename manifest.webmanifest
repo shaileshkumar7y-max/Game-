@@ -1,11 +1,11 @@
 {
-  "name": "After Hours — HER AFTER DARK Innerwear House",
-  "short_name": "Innerwear House",
-  "description": "Local innerwear catalogue, campaign wheels, date ideas, size guide and Art Atelier.",
+  "name": "After Hours — HER AFTER DARK",
+  "short_name": "After Hours",
+  "description": "Adult-only, local Solo and Couples games, image shuffle and innerwear house.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0d0910",
-  "theme_color": "#0d0910",
-  "icons": [{ "src": "../icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+  "background_color": "#100a12",
+  "theme_color": "#100a12",
+  "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
 }
